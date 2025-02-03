@@ -1,0 +1,3 @@
+
+bot_token = '7604126584:AAHLC4l962zGg0P4RJW3cFn7zCm4G-HEmNY'
+chat_id = 1932486894
