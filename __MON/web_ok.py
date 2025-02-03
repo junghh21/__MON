@@ -2,14 +2,17 @@
 import requests
 from datetime import datetime
 import subprocess
+from __COMMON.globals import *
 
+url_base = f"https://api.telegram.org/bot{bot_token}/sendmessage"
 def send_error_to_telegram(message):
   params = {'chat_id': chat_id, 'text': datetime.now().strftime("%Y-%m-%d %H:%M:%S") + " " + message}
   response = requests.get(url_base, params=params)
-  
+
+url = "https://localhost:5001"  
 def check_web_jango_ok():
   try:
-    response = requests.get("https://localhost:5001", verify=False)
+    response = requests.get(url, verify=False)
     if response.status_code == 200:
       print(f"웹사이트 {url}에 정상적으로 접속했습니다.")
       send_error_to_telegram(f"웹사이트 {url}에 정상적으로 접속했습니다.")

@@ -20,6 +20,7 @@ def job_1hour():
     print(f"job_1hour error: {e}")
 
 if __name__ == "__main__":
+  job_1hour()
   #schedule.every().day.at("02:00").do(job_0200)
   #schedule.every().day.at("12:10").do(job_1210)
   schedule.every().hour.at(":01").do(job_1hour)
