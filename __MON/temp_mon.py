@@ -28,6 +28,7 @@ def capture_win_jango_ok(cls_name, title, clip_left, clip_top, clip_width, clip_
   bitmap.CreateCompatibleBitmap(dc_obj, width, height)
   mem_dc.SelectObject(bitmap)
   mem_dc.BitBlt((0, 0), (width, height), dc_obj, (0, 0), win32con.SRCCOPY)
+  bitmap.SaveBitmapFile(mem_dc, 'screenshot.bmp')
   
   raw = bitmap.GetBitmapBits(True)
   image = Image.frombuffer('RGB', (width, height), raw, 'raw', 'BGRX', 0, 1)
