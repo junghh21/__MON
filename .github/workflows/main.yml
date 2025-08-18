@@ -8,6 +8,7 @@ on:
 
 jobs:
   test:
+  
     runs-on: ubuntu-latest
     # env:
     #   LANG: ko_KR.UTF-8       # 한국어 로케일 설정 (일부 환경에서만 적용됨)
@@ -16,6 +17,11 @@ jobs:
     #   PYTHONLEGACYWINDOWSSTDIO: utf-8
       
     steps:
+    - name: Set timezone
+      uses: MathRobin/timezone-action@v1.1
+      with:
+        timezoneLinux: 'Asia/Seoul'
+    
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
