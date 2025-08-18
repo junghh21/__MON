@@ -29,7 +29,7 @@ def check_web_jango_ok():
       send_error_to_telegram(f"Error executing shell script in background: {e.output}")
 
 def check_web_temp():
-  url = "https://localhost:5001/api/temp"
+  url = "https://www.okkjc.co.kr:5001/api/temp"
   try:
       response = requests.get(url, timeout=5, verify=False)
       response.raise_for_status()  # HTTP 오류 발생 시 예외
