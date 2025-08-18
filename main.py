@@ -7,7 +7,7 @@ import schedule
 import time
 from datetime import datetime
 
-from __MON.temp_mon import capture_win_jango_ok
+#from __MON.temp_mon import capture_win_jango_ok
 from __MON.web_ok import check_web_jango_ok
 
 def job_1hour():  
