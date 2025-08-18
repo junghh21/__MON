@@ -7,15 +7,16 @@ import schedule
 import time
 from datetime import datetime
 
-#from __MON.temp_mon import capture_win_jango_ok
+from __MON.temp_mon import capture_win_jango_ok
 from __MON.web_ok import check_web_jango_ok
 
 def job_1hour():  
   try:    
     print("job_1hour")
     check_web_jango_ok ()
+    check_web_temp()
     #capture_win_jango_ok("CORETEMP", None, 0, 280, 336, 76)    # HH32
-    capture_win_jango_ok("CORETEMP", None, 0, 115, 344, 140)    # KJC333
+    #capture_win_jango_ok("CORETEMP", None, 0, 115, 344, 140)    # KJC333
   except Exception as e:
     print(f"job_1hour error: {e}")
 
