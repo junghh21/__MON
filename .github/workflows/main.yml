@@ -1,4 +1,4 @@
-name: Windows ChromeDriver Test
+name: MON Windows ChromeDriver Test
 
 on:
   push:
@@ -12,7 +12,9 @@ jobs:
     env:
       LANG: ko_KR.UTF-8       # 한국어 로케일 설정 (일부 환경에서만 적용됨)
       LC_ALL: ko_KR.UTF-8
-    
+      PYTHONIOENCODING: utf-8
+      PYTHONLEGACYWINDOWSSTDIO: utf-8
+      
     steps:
     - name: UTF-8 코드 페이지 설정
       run: chcp 65001  # 한글 출력이 깨지지 않도록 UTF-8 코드 페이지로 변경
