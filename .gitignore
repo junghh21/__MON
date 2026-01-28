@@ -4,3 +4,5 @@ clipped_screenshot_dc.png
 screenshot.bmp
 __TONG.code-workspace
 .vscode/settings.json
+__COMMON/__pycache__/*
+__COMMON/temp/*
