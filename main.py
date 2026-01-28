@@ -13,7 +13,10 @@ from __MON.web_ok import check_web_jango_ok, check_web_temp
 def job_1hour():  
   try:    
     print("job_1hour")
-    check_web_jango_ok ()
+    url = "https://www.okkjc.co.kr:5001"  
+    check_web_jango_ok (url)
+    url = "https://www.okkjc.co.kr:5002"  
+    check_web_jango_ok (url)
     check_web_temp()
     #capture_win_jango_ok("CORETEMP", None, 0, 280, 336, 76)    # HH32
     #capture_win_jango_ok("CORETEMP", None, 0, 115, 344, 140)    # KJC333

@@ -9,8 +9,7 @@ def send_error_to_telegram(message):
   params = {'chat_id': chat_id, 'text': datetime.now().strftime("%Y-%m-%d %H:%M:%S") + " " + message}
   response = requests.get(url_base, params=params)
 
-def check_web_jango_ok():
-  url = "https://www.okkjc.co.kr:5001"  
+def check_web_jango_ok(url):
   try:
     response = requests.get(url, verify=False)
     if response.status_code == 200:

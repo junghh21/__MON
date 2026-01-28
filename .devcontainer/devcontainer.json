@@ -1,17 +1,17 @@
-// {
-//   "name": "venv_mon",
-//   "image": "ghcr.io/junghh21/venv_mon:latest",
-//   "mounts": [
-//     "source=vol_mon,target=/__PY,type=volume"
-//   ],
-//   "workspaceFolder": "/__PY/__MON",
-//   "settings": {
-//     "terminal.integrated.shell.linux": "/bin/bash"
-//   },
-//   "extensions": [
-//     "ms-python.python",
-//   ],
-//   "forwardPorts": [8000],
-//   "postCreateCommand": "echo 'Dev Container ready!'"
-// }
+{
+  "name": "venv_mon",
+  "image": "ghcr.io/junghh21/venv_mon:latest",
+  "mounts": [
+    "source=vol_mon,target=/__PY,type=volume"
+  ],
+  "workspaceFolder": "/__PY/__MON",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+  ],
+  "forwardPorts": [8000],
+  "postCreateCommand": "echo 'Dev Container ready!'"
+}
 
