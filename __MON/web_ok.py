@@ -21,11 +21,11 @@ def check_web_jango_ok(url):
   except requests.exceptions.RequestException as e:
     print(f"오류 발생: {e}")
     send_error_to_telegram(f"오류 발생: {e}")    
-    try:
-      result = subprocess.run(["C:\__PY\Run_Server.bat"], capture_output=True, text=True, check=True)
-      send_error_to_telegram(result.stdout)
-    except subprocess.CalledProcessError as e:
-      send_error_to_telegram(f"Error executing shell script in background: {e.output}")
+    # try:
+    #   result = subprocess.run(["C:\__PY\Run_Server.bat"], capture_output=True, text=True, check=True)
+    #   send_error_to_telegram(result.stdout)      
+    # except subprocess.CalledProcessError as e:
+    #   send_error_to_telegram(f"Error executing shell script in background: {e.output}")
 
 def check_web_temp():
   url = "https://www.okkjc.co.kr:5001/api/temp"
