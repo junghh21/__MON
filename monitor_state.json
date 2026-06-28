@@ -1,0 +1,32 @@
+{
+  "messages": [
+    "Started at 2026-06-28T02:44:21.640009"
+  ],
+  "web_results": [
+    {
+      "url": "https://www.okkjc.co.kr:5001",
+      "status": "ERROR",
+      "code": "0",
+      "msg": "[SSL: CERTIFICATE_VE",
+      "latency_ms": "161ms"
+    },
+    {
+      "url": "https://www.okkjc.co.kr:5002",
+      "status": "ERROR",
+      "code": "0",
+      "msg": "[SSL: CERTIFICATE_VE",
+      "latency_ms": "159ms"
+    }
+  ],
+  "temp_result": {
+    "status": "OK",
+    "value": "Sample Slide Show",
+    "latency_ms": "1008ms"
+  },
+  "retry_count": 3,
+  "start_time": "2026-06-28T02:44:21.640009",
+  "errors": [
+    "Web check failed for https://www.okkjc.co.kr:5001",
+    "Web check failed for https://www.okkjc.co.kr:5002"
+  ]
+}

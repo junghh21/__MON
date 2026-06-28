@@ -1,8 +1,63 @@
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-__pycache__*
-clipped_screenshot_dc.png
-screenshot.bmp
-__TONG.code-workspace
-.vscode/settings.json
-__COMMON/__pycache__/*
-__COMMON/temp/*
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+.nosetests
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Configuration and reports (if generated)
+monitor_state.json
+DEBUG_REPORT.md
+E2E_TEST_REPORT.md
+REFACTORING_SUMMARY.md
+REVIEW_REPORT.md
+VERIFICATION_REPORT.md
+UX_IMPROVEMENT_REPORT.md
+```
