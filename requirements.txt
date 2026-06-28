@@ -1,2 +1,8 @@
 requests
 schedule
+langgraph
+python-dotenv
+httpx
+pytest
+pytest-asyncio
+pytest-cov
